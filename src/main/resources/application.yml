@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/visiterData
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
