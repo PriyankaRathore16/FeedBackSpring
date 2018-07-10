@@ -22,10 +22,6 @@ public class VisiterDetailsController {
 	@RequestMapping(value="/addVisiterDetails",method=RequestMethod.POST) 	
 	public ResponseEntity<Visiter> createVisiterDetails(@RequestBody Visiter visiter) 
 	{ 			
-//		for(VisiterDetails vd : visiter.getVisiterDetails() ){
-//			vd.setVisiter( visiter);
-//			
-//		}
 		visiterDetailsService.save(visiter); 
 		return new ResponseEntity<Visiter>(visiter,HttpStatus.CREATED);
 	} 	
